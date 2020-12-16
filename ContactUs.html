@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Home</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <nav>
+    <a href="../home.html" class="link"> Home </a>
+    <a href="./ProSer.html" class="link"> Products and Services </a>
+    <a href="./ContactUs.html" class="link"> Contact Us </a>
+  </nav>
+  <body>
+    <div class="column-layout">
+      <div class="main-column2">
+        <h2 style="font-size: 200%;">
+          Location
+        </h2>
+        <p>
+          1022 S Payne Street
+        </p>
+        <p>
+          New Ulm, MN 56073
+        </p>
+        <br />
+        <p><b>Phone:</b> 507-365-8284</p>
+        <br />
+        <p><b> Email:</b> soccerstyle@ssinc.org</p>
+      </div>
+      <div class="sidebar-two2">
+        <h1 style="font-size:200%;">Hours of Operation</h1>
+        <p><b> Mon-Fri:</b> 8am - 4pm</p>
+        <br />
+        <p><b> Sat-Sun:</b> 10am-2pm</p>
+      </div>
+    </div>
+    <form
+      action="https://us-central1-alhsofunctions.cloudfunctions.net/alhsoFormExample"
+      method="post"
+    >
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="user_email" />
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </li>
+      </ul>
+      <li class="button">
+        <button type="submit">Send your message</button>
+        <nav><a href="./payment-form.html" class="link"> Make Payment </a></nav>
+      </li>
+    </form>
+  </body>
+</html>
