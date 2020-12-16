@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Home</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <nav>
+    <a href="../home.html" class="link"> Home </a>
+    <a href="./ProSer.html" class="link"> Products and Services </a>
+    <a href="./ContactUs.html" class="link"> Contact Us </a>
+  </nav>
+  <body>
+    <div class="column-layout">
+      <div class="main-column">
+        <h2>
+          Welcome to Soccer Style
+        </h2>
+        <p>
+          We are happy to welcome to the the Soccer Style Webpage! We have alot
+          to offer and services so that your soccer season fits with your style!
+          From custom made jerseys to utility to lessons we have got you
+          covered!
+        </p>
+        <br />
+        <p>
+          Our lessons our taught by experienced professionals. Lasting up to one
+          hour you could be training like the pros and soon be playing like
+          them. Our lessons are adaptable to fit any position you may play
+          offering the best drills and moves to maximize your impact on the
+          field.
+        </p>
+        <br />
+        <p>
+          Does your team need a new set of stylish jerseys going into this
+          season? We've got you covered! From changing thye color to names on
+          the back, Soccer Style offers over 1000 different designs to explore
+          when costumizing your apparel.
+        </p>
+        <br />
+        <p>
+          Unprepared for this years season? Soccer Style has everything you need
+          to get your team decked out in the best gear possible. From
+          professionally designed soccer balls to masterly crafted nets. Soccer
+          Style has the best quality gear so all you have to worry about is the
+          next game!
+        </p>
+      </div>
+
+      <div class="sidebar-two">
+        <img
+          src="https://cdn.glitch.com/df984939-9a7a-4fb0-b443-c1a630dbee9a%2Flogo%20(1).png?v=1606788523497"
+        />
+        <p style="font-size:160%;">
+          Lessons <br />
+          Apparel <br />
+          Utility
+        </p>
+      </div>
+    </div>
+
+    <div id="specialoffers" class="call-outs-container">
+      <div class="call-out">
+        <h4>Buy 1 Lesson Get 1 FREE</h4>
+        <p>
+          From now until January 1, 2021 we are offering a buy 1 get 1 offer on
+          all soccer lessons. With lessons lasting 1 hour and compatible for any
+          position this offer will do nothing but improve you skill and take
+          your playing to the next level.
+        </p>
+      </div>
+
+      <div class="call-out">
+        <h4>10% Discount on All Cleats</h4>
+        <p>
+          With cleats being an essential part of soccer we thought we could give
+          you a hand in purchasing them. From now until January 1, 2021 we are
+          offering a 10% discount on ALL cleats. Not only will you be more
+          comfortable in a new pair, but you can also show the team your style.
+        </p>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <button id="hidebutton" onclick="hideAds()">Hide Offers</button>
+    </div>
+    <script>
+      function hideAds() {
+        var x = document.getElementById("specialoffers");
+        var y document.getElementById("hidebutton");
+        x.style.display = "none";
+        y.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
